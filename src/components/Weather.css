@@ -1,0 +1,30 @@
+.weather-card {
+    max-width: 500px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: white; /* Card background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition effects */
+  }
+  
+  .weather-card:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+  }
+  
+  .card-title {
+    font-size: 1.75rem; /* Slightly larger title */
+    font-weight: bold;
+    color: #007BFF; /* Light blue title color */
+  }
+  
+  .card-subtitle {
+    text-transform: capitalize;
+    color: #6c757d; /* Muted text color */
+  }
+  
+  .card-text {
+    font-size: 1.2rem; /* Larger text for readability */
+    color: #333; /* Darker text color for better readability */
+    padding: 10px 0; /* Add padding */
+  }
+  

@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Apply the custom font */
+  }
+  
+  .app {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add some padding */
+    background-image: linear-gradient(to bottom right, #e0f7fa, #ffffff); /* Background gradient */
+  }
+  
+  .input-group {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .btn-primary {
+    background-color: #007BFF; /* Button color */
+    border: none; /* Remove border */
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .alert {
+    margin: 20px auto; /* Center error messages */
+    max-width: 500px; /* Set a max width for alerts */
+  }
+  
+  @keyframes moveClouds {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .clouds {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    width: 200%;
+    height: 100px;
+    
+    animation: moveClouds 30s linear infinite;
+    z-index: -1; /* Behind the content */
+  }
+  
+  .app {
+    position: relative; /* Allow absolute positioning of the clouds */
+    overflow: hidden; /* Prevent overflow */
+  }
+  
